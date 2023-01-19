@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function reverse(input){
+           const result = [];
+
+            for(let i = input.length - 1; i >= 0; i--){
+                result[input.length - i] = input[i];
+            }
+            return result;
+        }
+        const input = [-1, 0, 1, 2, 3, 4, 5, 6];
+        const result = reverse(input);
+        console.log(result)
+         
+        //sau asa:
+        const listOfNumber = [0, 1, 2, 3, 4, 5]
+           for(let i =listOfNumber.length - 1; i >= 0; i-=1){
+           console.log(i)
+           }
+    </script>
+    
+</body>
+</html>
